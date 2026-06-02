@@ -1,1 +1,75 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pokémon - Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">PokéGamer</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Início</a></li>
+                <li><a href="#jogos">Jogos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Explore os Jogos Pokémon</h1>
+            <p>Relembre os clássicos e conheça as últimas jornadas do mundo Pokémon.</p>
+            <a href="#jogos" class="btn">Ver Jogos</a>
+        </div>
+    </section>
+
+    <main id="jogos" class="container">
+        <h2>Gerações de Jogos</h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="retro">Clássicos (Game Boy/GBA)</button>
+            <button class="filter-btn" data-filter="modern">Modernos (Switch)</button>
+        </div>
+
+        <div class="games-grid">
+            
+            <div class="game-card" data-category="retro">
+                <div class="card-badge retro">Geração 1</div>
+                <h3>Pokémon Red & Blue</h3>
+                <p>Onde tudo começou. Escolha entre Bulbasaur, Charmander ou Squirtle e explore a região de Kanto no Game Boy original.</p>
+            </div>
+
+            <div class="game-card" data-category="retro">
+                <div class="card-badge retro">Geração 3</div>
+                <h3>Pokémon Emerald</h3>
+                <p>A versão definitiva da região de Hoenn. Enfrente a Equipe Magma e a Equipe Aqua e desperte o lendário Rayquaza.</p>
+            </div>
+
+            <div class="game-card" data-category="modern">
+                <div class="card-badge modern">Geração 8</div>
+                <h3>Pokémon Sword & Shield</h3>
+                <p>Viaje pela região de Galar inspirada no Reino Unido e experimente o fenômeno Dynamax no Nintendo Switch.</p>
+            </div>
+
+            <div class="game-card" data-category="modern">
+                <div class="card-badge modern">Geração 9</div>
+                <h3>Pokémon Scarlet & Violet</h3>
+                <p>Explore a região de Paldea em um mundo totalmente aberto. Descubra o mistério do fenômeno Terastal.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PokéGamer. Feito por um fã de Pokémon. Imagens e marcas registradas pertencem à Nintendo/The Pokémon Company.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
